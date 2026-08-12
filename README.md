@@ -129,6 +129,10 @@ Works in all modern browsers that support:
 - Proper form labels and error messages
 - Good color contrast in both light and dark modes
 
+# 👨‍💻 Authors
+- ***ABDUL SABOOR***
+ ---
+
 ## License
 
 MIT
