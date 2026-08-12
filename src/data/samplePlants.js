@@ -1,0 +1,62 @@
+export const samplePlants = [
+  {
+    name: 'Monstera Deliciosa',
+    species: 'Monstera deliciosa',
+    location: 'Living Room',
+    imageUrl: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&h=300&fit=crop',
+    purchaseDate: '2024-01-15',
+    wateringFrequency: 7,
+    lastWatered: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    fertilizingFrequency: 30,
+    lastFertilized: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    lightRequirement: 'Bright indirect',
+    healthStatus: 'Healthy',
+    notes: 'Thriving in bright indirect light. Leaves are developing beautiful fenestrations.',
+    isSample: true
+  },
+  {
+    name: 'Snake Plant',
+    species: 'Sansevieria trifasciata',
+    location: 'Bedroom',
+    imageUrl: 'https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?w=400&h=300&fit=crop',
+    purchaseDate: '2023-11-20',
+    wateringFrequency: 14,
+    lastWatered: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    fertilizingFrequency: 60,
+    lastFertilized: new Date(Date.now() - 55 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    lightRequirement: 'Low',
+    healthStatus: 'Healthy',
+    notes: 'Very low maintenance. Perfect for beginners.',
+    isSample: true
+  },
+  {
+    name: 'Aloe Vera',
+    species: 'Aloe barbadensis miller',
+    location: 'Office',
+    imageUrl: 'https://images.unsplash.com/photo-1567331711402-509c12c41959?w=400&h=300&fit=crop',
+    purchaseDate: '2024-02-10',
+    wateringFrequency: 21,
+    lastWatered: new Date(Date.now() - 20 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    fertilizingFrequency: 90,
+    lastFertilized: null,
+    lightRequirement: 'Bright indirect',
+    healthStatus: 'Needs Attention',
+    notes: 'Some leaves are turning yellow. Might need less water.',
+    isSample: true
+  },
+  {
+    name: 'Peace Lily',
+    species: 'Spathiphyllum',
+    location: 'Bathroom',
+    imageUrl: 'https://images.unsplash.com/photo-1593691509543-c55fb32d8de5?w=400&h=300&fit=crop',
+    purchaseDate: '2024-03-05',
+    wateringFrequency: 5,
+    lastWatered: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    fertilizingFrequency: 30,
+    lastFertilized: new Date(Date.now() - 28 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    lightRequirement: 'Low',
+    healthStatus: 'Healthy',
+    notes: 'Loves the humidity in the bathroom. Flowers regularly.',
+    isSample: true
+  }
+];

@@ -1,0 +1,151 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --bs-body-bg: #f8f9fa;
+  --bs-body-color: #212529;
+  --card-bg: #ffffff;
+  --navbar-bg: #ffffff;
+  --input-bg: #ffffff;
+  --border-color: #dee2e6;
+}
+
+[data-theme='dark'] {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --navbar-bg: #1e1e1e;
+  --input-bg: #2d2d2d;
+  --border-color: #404040;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar {
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--input-bg);
+  border-color: var(--border-color);
+  color: var(--bs-body-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.modal-content {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.table {
+  color: var(--bs-body-color);
+}
+
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+.plant-card-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.care-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.care-timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border-color);
+}
+
+.care-timeline-item {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.care-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  border: 2px solid var(--card-bg);
+}
+
+.dashboard-card {
+  border-left: 4px solid #0d6efd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card.water {
+  border-left-color: #0d6efd;
+}
+
+.dashboard-card.fertilizer {
+  border-left-color: #198754;
+}
+
+.dashboard-card.overdue {
+  border-left-color: #dc3545;
+}
+
+.dashboard-card.healthy {
+  border-left-color: #198754;
+}
+
+.dashboard-card.attention {
+  border-left-color: #ffc107;
+}
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-state-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .plant-card-img {
+    height: 150px;
+  }
+  
+  .dashboard-card {
+    margin-bottom: 1rem;
+  }
+}
